@@ -1,0 +1,121 @@
+.pager{
+  background-color:#9FF781;
+  padding-top:6px;
+  position: fixed;
+  bottom:0px;
+}
+
+header{
+width:20%;
+margin-left:40%;
+}
+
+body{
+  background-color:#9FF781;
+}
+table.tablesorter {
+    background-color:#178BD3 ;
+	font-family:arial;
+	margin:10px 0pt 15px;
+	font-size: 10pt;
+	width: 100%;
+	text-align: left;
+}
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+	background-color:#178BD3;
+	border: 1px solid #FFF;
+	font-size: 10pt;
+	padding: 4px;
+}
+
+table.tablesorter thead tr .header {
+	background-image: url(img/bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+table.tablesorter tbody td {
+	color: #3D3D3D;
+	padding: 4px;
+	background-color: #FFF;
+	vertical-align: top;
+}
+
+table.tablesorter tbody tr.odd td {
+	background-color:#F0F0F6;
+}
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(asc.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url(desc.gif);
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+background-color: #8dbdd8;
+}
+
+table.tablesorte {
+    background-color: #FF6133 ;
+	font-family:arial;
+	margin:10px 0pt 15px;
+	font-size: 10pt;
+	width: 100%;
+	text-align: left;
+}
+table.tablesorte thead tr th, table.tablesorte tfoot tr th {
+	background-color: #FF6133;
+	border: 1px solid #FFF;
+	font-size: 10pt;
+	padding: 4px;
+}
+
+table.tablesorte thead tr .header {
+	background-image: url(img/bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+table.tablesorte tbody td {
+	color: #3D3D3D;
+	padding: 4px;
+	background-color: #FFF;
+	vertical-align: top;
+}
+
+table.tablesorte tbody tr.odd td {
+	background-color:#F0F0F6;
+}
+table.tablesorte thead tr .headerSortUp {
+	background-image: url(img/asc.gif);
+}
+table.tablesorte thead tr .headerSortDown {
+	background-image: url(img/desc.gif);
+}
+table.tablesorte thead tr .headerSortDown, table.tablesorte thead tr .headerSortUp {
+background-color: #8dbdd8;
+}
+
+h1.tablesorter{
+  margin-top:10px;
+  text-align:center;
+  color:#178BD3;
+}
+h1.tablesorte{
+  text-align:center;
+  color:#FF6133;
+}
+
+.buton_editar{
+  width: 50px;
+  height: 20px;
+  background-image: url(img/editar.png);
+  background-repeat: no-repeat;
+  margin-left:25px;
+}
+.buton_delete{
+  width: 50px;
+  height: 20px;
+  background-image: url(img/delete.png);
+  background-repeat: no-repeat;
+  margin-left:25px;
+}

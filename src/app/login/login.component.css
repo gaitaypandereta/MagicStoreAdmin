@@ -1,0 +1,71 @@
+
+
+.example-card{
+  width: 30%;
+  margin:1% 1% 0% 32%;
+  padding: 3%;
+  border-radius: 39px 39px 39px 39px;
+  -moz-border-radius: 39px 39px 39px 39px;
+  -webkit-border-radius: 39px 39px 39px 39px;
+  border: 1px solid #909090;
+
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+.example-form {
+  min-width: 100px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+h1{
+  text-align: center;
+  color: #909090;
+  font-family:Sail ;
+  font-size: 3.2vw;
+}
+@media screen and (max-width: 800px) {
+  h1{
+    font-size: 6vw;
+  }
+.example-card{
+  width: 50%;
+  margin:1% 1% 0% 22%;
+  padding: 3%;
+  border-radius: 39px 39px 39px 39px;
+  -moz-border-radius: 39px 39px 39px 39px;
+  -webkit-border-radius: 39px 39px 39px 39px;
+  border: 1px solid #909090;
+
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+ }
+}
+@media screen and (max-width: 600px) {
+  h1{
+    font-size: 6vw;
+  }
+
+
+.example-card{
+  width: 70%;
+  margin:1% 1% 0% 12%;
+  padding: 3%;
+  border-radius: 39px 39px 39px 39px;
+  -moz-border-radius: 39px 39px 39px 39px;
+  -webkit-border-radius: 39px 39px 39px 39px;
+  border: 1px solid #909090;
+
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+}
+}

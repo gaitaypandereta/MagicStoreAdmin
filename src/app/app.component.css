@@ -1,0 +1,154 @@
+body{
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+.fondo{
+  text-align: center;
+  color: #909090;
+  font-family:Sail ;
+  background-color:#9FF781;
+}
+.z{
+  font-size: 12vw;
+  color: rgb(7, 133, 28);
+  font-family:Sail ;
+}
+.c{
+  font-size: 4vw;
+  color: rgb(7, 133, 28);
+  font-family:Sail ;
+}
+
+.o{
+  font-size: 8vw;
+  color:rgb(238, 82, 43);
+  font-family:Sail ;
+}
+.y{
+  font-size: 4vw;
+  color: rgb(7, 101, 145);
+  font-family:Sail ;
+}
+
+.tu{
+  font-size: 3vw;
+  color: rgb(243, 170, 11);
+  font-family:Sail ;
+}
+.sl{
+  font-size: 2.vw;
+  color: #909090;
+
+}
+.ad{
+  font-size: 2.5vw;
+  color: #909090;
+  font-family: Sail;
+}
+.logo{
+  margin-top: 4px;
+
+}
+
+@media screen and (max-width: 900px) {
+  .z{
+    font-size: 18vw;
+    color: rgb(7, 133, 28);
+    font-family:Sail ;
+  }
+  .c{
+    font-size: 6vw;
+    color: rgb(7, 133, 28);
+    font-family:Sail ;
+  }
+
+  .o{
+    font-size: 10vw;
+    color:rgb(238, 82, 43);
+    font-family:Sail ;
+  }
+  .y{
+    font-size: 6vw;
+    color: rgb(7, 101, 145);
+    font-family:Sail ;
+  }
+
+  .tu{
+    font-size: 4vw;
+    color: rgb(243, 170, 11);
+    font-family:Sail ;
+  }
+  .sl{
+    font-size: 2.5vw;
+    color: #909090;
+
+  }
+  .ad{
+    font-size: 2.5vw;
+    color: #909090;
+    font-family: Sail;
+  }
+
+}
+.btn_campanya{
+  width: 30%;
+  color: aliceblue;
+  margin-bottom: 14px;
+  text-shadow: 1px 2px #000;
+  font-size: 34px;
+  color:rgb(7, 101, 145);
+  background-color: gainsboro;
+  margin-right: 2%;
+}
+
+.btn_users{
+  width: 20%;
+  color: aliceblue;
+  margin-bottom: 14px;
+  text-shadow: 1px 2px #000;
+  font-size: 34px;
+  color:rgb(238, 82, 43);
+  background-color: gainsboro;
+}
+
+@media screen and (max-width: 600px) {
+  .z{
+    font-size: 24vw;
+    color: rgb(7, 133, 28);
+    font-family:Sail ;
+  }
+  .c{
+    font-size: 8vw;
+    color: rgb(7, 133, 28);
+    font-family:Sail ;
+  }
+
+  .o{
+    font-size: 18vw;
+    color:rgb(238, 82, 43);
+    font-family:Sail ;
+  }
+  .y{
+    font-size: 12vw;
+    color: rgb(7, 101, 145);
+    font-family:Sail ;
+  }
+
+  .tu{
+    font-size: 8vw;
+    color: rgb(243, 170, 11);
+    font-family:Sail ;
+  }
+  .sl{
+    font-size: 4.5vw;
+    color: #909090;
+
+  }
+  .ad{
+    font-size: 3.5vw;
+    color: #909090;
+    font-family: Sail;
+  }
+
+}
