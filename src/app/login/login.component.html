@@ -3,20 +3,24 @@
 
     <mat-card class="example-card">
               <h1>Login</h1>
-       <form class="example-form">
 
-        <mat-form-field class="example-full-width">
-          <input matInput  type="email" placeholder="Su email" name="email" >
-        </mat-form-field>
-        <mat-form-field class="example-full-width">
-          <input matInput  type="password" placeholder="Su password" name="password" >
-        </mat-form-field>
-      </form>
-      <button mat-raised-button
+
+       <form #formLogin="ngForm"   class="example-form" (ngSubmit)="onLogin()">
+
+          <mat-form-field class="example-full-width">
+               <input matInput  type="email" placeholder="Su email" name="email"  [(ngModel)]="user.email" required>
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width">
+               <input matInput  type="password" placeholder="Su password" name="password"  [(ngModel)]="user.password" required>
+          </mat-form-field>
+
+          <button type="submit" mat-raised-button
             matTooltip="Info about the action"
-            aria-label="Button that displays a tooltip when focused or hovered over"  [routerLink]="['/cukis']" >
+            aria-label="Button that displays a tooltip when focused or hovered over"  >
             ENVIAR
-      </button>
+          </button>
+       </form>
 
     </mat-card>
 

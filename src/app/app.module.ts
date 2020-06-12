@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -18,7 +17,11 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import { CukisComponent } from './cukis/cukis.component';
 import { CampanyaComponent } from './campanya/campanya.component';
 import { HttpClientModule } from '@angular/common/http';
-import { DetalleComponent } from './detalle/detalle.component';
+import { DetallescukiComponent } from './detallescuki/detallescuki.component';
+import { MatDialogModule } from '@angular/material/dialog';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +29,8 @@ import { DetalleComponent } from './detalle/detalle.component';
     AdministratorComponent,
     CukisComponent,
     CampanyaComponent,
-    DetalleComponent,
+    DetallescukiComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -42,9 +46,14 @@ import { DetalleComponent } from './detalle/detalle.component';
     MatSortModule,
     MatTableModule,
     MatPaginatorModule,
-    HttpClientModule
+    HttpClientModule,
+    MatButtonModule,
+    MatDialogModule, // <--- Aquí
+    BrowserAnimationsModule, // <--- Aquí
+    MatButtonModule,
   ],
+
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

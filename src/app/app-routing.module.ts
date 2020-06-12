@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, ActivatedRoute } from '@angular/router';
 import {LoginComponent} from './login/login.component';
 import {AdministratorComponent} from './administrator/administrator.component';
 import {CukisComponent} from './cukis/cukis.component';
-import {DetalleComponent} from './detalle/detalle.component';
+import {DetallescukiComponent} from './detallescuki/detallescuki.component';
+
+
 const routes: Routes = [
 
   {
@@ -25,7 +27,9 @@ const routes: Routes = [
      component : AdministratorComponent
   },
 
-  { path : "" , component : DetalleComponent , outlet : "sidebar" },
+  { path : 'detallescuki/:id',
+     component : DetallescukiComponent
+  },
 
 ];
 

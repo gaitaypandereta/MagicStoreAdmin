@@ -1,0 +1,124 @@
+
+ <div *ngIf="btn_user">
+  <button  class="btn_person" (click)="saveButtons()">
+    <mat-icon>perm_identity</mat-icon>
+  </button>
+ </div>
+  <div *ngIf="edited">
+
+     <h1 class ="user" >Datos Usuario</h1>
+
+     <table class="user" *ngIf="user | async as user"  width="100%">
+
+        <tr>
+           <th>Cuenta Facebook</th>
+           <th>Cuenta Twitter</th>
+           <th>Cuenta Instagram</th>
+           <th>Estado</th>
+           <th></th>
+        </tr>
+
+        <tr>
+          <td>{{user.facebook}}</td>
+          <td>{{user.twitter}}</td>
+          <td>{{user.instagram}}</td>
+          <td>{{user.comenta_admin}}</td>
+          <td>
+                <button (click)="saveButtons()">
+                   <mat-icon> next_plan</mat-icon>
+               </button>
+          </td>
+        </tr>
+
+    </table>
+</div>
+   <h1 class ="cukis" > Cukis Usuario</h1>
+
+   <table class="cukis" *ngIf="cuki| async as cuki"  width="100%">
+
+      <tr>
+        <th>Campaña</th>
+        <th>Fecha inicio</th>
+        <th>Fecha fin</th>
+        <th>Email</th>
+        <th>Aporta</th>
+        <th>Facebook</th>
+        <th>Twitter</th>
+        <th>Instagram</th>
+        <th>Acumula</th>
+        <th>Total</th>
+      </tr>
+
+      <tr>
+        <td>{{cuki.campanya}}</td>
+        <td>{{cuki.fecha}}</td>
+        <td>{{cuki.fecha_fin}}</td>
+        <td>{{cuki.email}}</td>
+        <td>{{cuki.aportaciones}}</td>
+        <td>{{cuki.facebook}}</td>
+        <td>{{cuki.twitter}}</td>
+        <td>{{cuki.instagram}}</td>
+        <td>{{cuki.acumuladas}}</td>
+        <td>{{cuki.total}}</td>
+      </tr>
+    </table>
+
+    <h1 class ="cukis edit" >Actualizar Cuki</h1>
+    <mat-card class="card">
+    <form class="example-form" *ngIf="cuki| async as cuki">
+
+      <mat-form-field class="example-full-width longe">
+        <input matInput placeholder="Id" name='id' [(ngModel)]='cuki.id'>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+         <input matInput  type="text" placeholder="Fecha" name="fecha" [(ngModel)]='cuki.fecha' >
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+         <input matInput placeholder="Campaña" name='campanya' [(ngModel)]='cuki.campanya'>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+         <input matInput  type="text" placeholder=" Fecha Fin" name="fecha_fin" [(ngModel)]='cuki.fecha_fin' >
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width longe">
+          <input matInput placeholder="Email" name='email' [(ngModel)]='cuki.email'>
+      </mat-form-field>
+
+         <mat-form-field class="example-full-width">
+           <input matInput placeholder="Cukis Aportacion" name='aportaciones' [(ngModel)]='cuki.aportaciones'>
+         </mat-form-field>
+
+         <mat-form-field class="example-full-width">
+            <input matInput  type="text" placeholder="Cukis Facebook" name="facebook" [(ngModel)]='cuki.facebook' >
+         </mat-form-field>
+
+         <mat-form-field class="example-full-width">
+            <input matInput placeholder="Cukis Twitter" name='twitter' [(ngModel)]='cuki.twitter'>
+         </mat-form-field>
+
+         <mat-form-field class="example-full-width">
+            <input matInput  type="text" placeholder="Cukis Instagram" name="instagram" [(ngModel)]='cuki.instagram' >
+         </mat-form-field>
+
+         <mat-form-field class="example-full-width">
+             <input matInput placeholder="Cukis acumuladas" name='acumula' [(ngModel)]='cuki.acumuladas'>
+         </mat-form-field>
+
+         <mat-form-field class="example-full-width">
+          <input matInput placeholder="Total Cukis" name='total' [(ngModel)]='cuki.total'>
+         </mat-form-field>
+         <div>
+            <a mat-flat-button color="warn" (click)="updateCuki(cuki)"
+            class="edit" >GUARDAR CAMBIOS</a>
+         </div>
+    </form>
+
+
+</mat-card>
+       <a mat-raised-button routerLink="/cukis">VOLVER</a>
+
+
+

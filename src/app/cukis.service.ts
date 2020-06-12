@@ -10,13 +10,9 @@ export class CukisService {
   url = 'http://localhost:3000/cukis';
   constructor(private http:HttpClient) { }
 
-
   getCukis(): Observable<Cuki[]> {
     return this.http.get<Cuki[]>(this.url);
   }
-
-
-
 
   getCuki(id: number | string): Observable<Cuki> {
     return this.http.get<Cuki>(this.url + '/' + id);
@@ -26,6 +22,7 @@ export class CukisService {
   this.http.post(this.url, cuki).subscribe();
 }
   updateCuki(cuki: Cuki){
+
   return this.http.put(this.url+'/'+cuki.id, cuki);
 }
 

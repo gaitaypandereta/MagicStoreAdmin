@@ -3,12 +3,12 @@ export class User {
     nombre: string;
     email: string;
     telefono: string;
-    edad: string;
-    sexo: string;
+    edad_compra: string;
+    sexo_compra: string;
     facebook: string;
     twitter: string;
     instagram: string;
-    estado:string;
+    comenta_admin:string;
     direccion: string;
   }
 

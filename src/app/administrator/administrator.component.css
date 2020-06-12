@@ -1,6 +1,7 @@
 table {
-  width: 1250px;
-  margin: 2%;
+  width: 1650px;
+  margin-left: 6px;
+  margin-bottom: 20px;
 }
 
 th.mat-sort-header-sorted {
@@ -23,5 +24,8 @@ h1.user{
   color:rgb(238, 82, 43);
   text-shadow: 1px 2px #000;
   font-size: 44px;
+}
+h2.color{
+  color:#909090;
 }
 

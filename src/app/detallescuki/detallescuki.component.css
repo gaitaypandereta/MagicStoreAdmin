@@ -1,0 +1,48 @@
+
+.user th{
+  background-color: rgb(238, 82, 43);
+  border-bottom: 1px #332f2f solid;
+  font-weight: bold;
+  padding:10px 0 10px 0;
+  color: #FFF;
+}
+h1.user{
+  margin-top:10px;
+  text-align:center;
+  color:rgb(238, 82, 43);
+  text-shadow: 1px 2px #000;
+  font-size: 24px;
+}
+
+.cukis th{
+  background-color:rgb(7, 101, 145);
+  border-bottom: 1px #332f2f solid;
+  font-weight: bold;
+  padding:10px 0 10px 0;
+  color: #FFF;
+}
+h1.cukis{
+  margin-top:10px;
+  text-align:center;
+  color:rgb(7, 101, 145);
+  text-shadow: 1px 2px #000;
+  font-size: 24px;
+}
+
+h1.edit{
+  font-size: 30px;
+}
+
+tr{
+  background-color: gainsboro;
+}
+table{
+  margin-bottom: 30px;
+}
+.card{
+  margin: 0 10px 6px 10px;
+}
+
+mat-form-field.longe{
+  width: 25%;
+}
